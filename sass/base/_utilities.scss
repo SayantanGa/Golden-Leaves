@@ -1,0 +1,19 @@
+.fixedwidth{
+    overflow: hidden;
+}
+
+.u-center-text{text-align:center;}
+
+.click-to-flip{
+    position: absolute;
+    left:8%;
+    bottom: 0;
+    color: white;
+    visibility: hidden;
+
+    @include mQ(phone){
+        visibility: visible;
+        font-size: small;
+        font-weight: bold;
+    }
+}

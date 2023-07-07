@@ -1,0 +1,46 @@
+//MEDIA QUERY MANAGER
+/*
+0 - 600px: Phone
+600 - 900px: Tablet Potrait
+900 - 1200px: Tablet Landscape
+[1200 - 1800px]: Normal
+1800px+ : Big Desktop
+*/
+
+/*
+$breakpt argument choices:
+- phone
+- tab-p
+- tab-l
+- big-d
+*/
+
+@mixin mQ($breakpt) {
+    @if $breakpt == phone {
+        @media only screen and (max-width: 49.5em) {
+            @content;
+        }
+    }
+    @if $breakpt == tab-p {
+        @media only screen and (max-width: 59.375em) {
+            @content;
+        }
+    }
+    @if $breakpt == tab-l {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpt == big-d {
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        }
+    }
+}
+
+@mixin align-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

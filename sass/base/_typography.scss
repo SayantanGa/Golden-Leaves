@@ -1,0 +1,43 @@
+#golden{
+    color: gold;
+}
+#leaves{
+    color: lightgreen;
+}
+
+body{
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#777;
+}
+
+.heading-3{
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-2, $color-1, $color-2, $color-1);
+    -webkit-background-clip: text;
+    background-clip:text;
+    color:transparent;
+    letter-spacing: 2px;
+    transition: all 0.1s;
+
+    &:hover{
+        transform: skewX(-5deg) scaleX(1.15) translateY(-2px);
+        outline: 2px ridge $color-1;
+        border-radius: 1rem;
+        outline-offset: 2rem;
+        text-shadow: .5rem 1rem 1rem rgba($color-2, .5);
+    }
+}
+
+#genres{
+    background-color: $color-lightgrey;
+    font-size: medium;
+    text-align: right;
+    width: 7rem;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 1rem;
+}

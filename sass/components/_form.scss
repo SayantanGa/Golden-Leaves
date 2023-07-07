@@ -1,0 +1,103 @@
+.form{
+    &__fill{
+        width: 50%;
+
+            @include mQ(phone){
+                width: 80%;
+            }
+
+        h2{
+            margin: 2rem;
+        }
+        text-align: center;
+    }
+
+    &__group{
+        position: relative;
+        z-index: 5;
+    }
+
+    &__input{
+        width: 50%;
+        margin-bottom: 1.5rem;
+        &[type="text"]{
+            text-transform: capitalize;
+        }
+    }
+
+    &__textarea{
+        z-index: 5;
+        position: relative;
+        width: 75%;
+    }
+
+    &__input,
+    &__textarea{
+        color: $color-green-2;
+        background-color:beige;
+        font-size: medium;
+        letter-spacing: 1.5px;
+        font-family: 'Playfair Display', serif;
+        border-radius: 1rem;
+        padding: .7rem;
+        transition: all .1s;
+        border: 1px solid $color-2;
+
+        &:focus{
+            box-shadow: $shadow-box;
+            transform: scale(1.05) translateY(-.1rem);
+            outline-color: $color-green-1;
+
+            &:invalid{
+                outline-color: orangered;
+                outline-style: groove;
+            }
+        }
+
+        &:placeholder-shown ~ .form__label{
+            opacity: 0;
+        }
+    }
+
+    &__label{
+        font-weight: 300;
+        margin-left: .5rem;
+        transition: all 1s ease;
+    }
+
+    &__radio{
+        &-group{
+            font-size: large;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-input{
+            visibility: hidden;
+
+            &:checked +.form__radio-label{
+                background-color:$color-green-1;
+            }
+        }
+
+        &-label{
+            cursor: pointer;
+            font-weight: 400;
+            border-radius: .45rem;
+        }
+
+        &-icon{
+            font-size: 1.5rem !important;
+        }
+    }
+
+    &__submit{
+        margin: .25rem;
+
+        &-button{
+            font-size: inherit;
+            font-weight: 500;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+}

@@ -1,0 +1,210 @@
+//HOME-PAGE
+//SECTION: HOME
+.home{
+    display: flex;
+    height: 30em;
+    margin-top: -0.5rem;
+
+    &--sec1{
+        flex:50%;
+        /*background-image:linear-gradient(to right top,
+        rgba(255, 234, 0, 0.601), rgba(255, 255, 255, 0.596));*/
+        background-image: linear-gradient(
+            to right,
+         rgba(255, 255, 255, 0.671),
+          rgba(255, 255, 255, 0.623)),
+          url("../img/brown-shade-1.png");
+        background-position: center;
+        background-size:cover;
+        padding: 1.5em;
+        position: relative;
+        text-align: center;
+
+        h3{
+            position: absolute;
+            top: 4rem;
+            left: 2rem;
+            color: rgb(255, 136, 0);
+            font-weight: 700;
+        }
+        h1{
+            position: absolute;
+            top: 12rem;
+            left: 2rem;
+            color: rgb(255, 136, 0);
+            font-size: 200%;
+            font-weight: 600;
+            
+        }
+        .btn{
+            opacity: 0;
+            animation: bubble-up .4s ease-in .3s 1 forwards;
+            &-home{
+                position: absolute;
+                bottom: 2em;
+                margin: 2em 30%;
+            }
+        }
+    }
+
+    &--sec2{
+        flex:50%;
+        background-blend-mode: screen;
+        background-image: linear-gradient(
+            to right,
+         rgba(244, 234, 89, 0.721),
+          rgba(197, 145, 2, 0.823)),
+          url("../img/library.jpg");
+        clip-path: polygon(0 3%, 100% 0, 100% 94%, 0 100%);
+        position: relative;
+
+        p{
+            width: 95%;
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            font-style: italic;
+            font-size: 3rem;
+            text-align: center;
+            color: brown;
+            display: block;
+            margin: auto;
+            position: absolute;
+            top:5vh;
+        }
+    }
+
+    @include mQ(phone){
+        flex-direction: column;
+        height: 95vh;
+    }
+}
+
+//SECTION: WHY US?
+#whyus{
+    background-color: $color-lightgrey;
+    padding: 10rem;
+    margin-top: -2rem;
+    margin-bottom: -10rem;
+
+    .heading-3{
+        position: relative;
+        top:-1rem;
+    }
+    p{
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    @include mQ(tab-p){
+        line-height: 1.4;
+    }
+
+    @include mQ(phone){
+        line-height: 1.4;
+        padding: 10rem 5rem;
+    }
+}
+
+#section-bestselling{
+    background-image: gradient-citrus-peel(to right, 0.7), url("../../img/library-2.jpg");
+    padding: 20rem 0 20rem 0;
+    clip-path: polygon(0 10%, 100% 0, 100% 84%, 0 100%);
+    margin-top: -2rem;
+    text-shadow: 1px 0px $color-2;
+
+    .heading-3{
+        position: relative;
+        top: -3rem;
+    }
+
+    .col-1-of-4{
+        perspective: 80em;
+        height: 32em;
+        
+        @include mQ(tab-p){
+            height: 30.5em;
+        }
+        
+    }
+
+    @include mQ(phone){
+        height: 300rem;
+        padding: 20rem 8rem;
+        clip-path: polygon(0 3%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+#section-recommended{
+    background-color: $color-lightgrey;
+    margin-top: -12rem;
+    padding-top: 12rem;
+    h2{
+        margin: 3rem;
+    }
+    .search-box{
+        input{
+            background-color: blanchedalmond;
+            width: 48px;
+            &:hover, &:focus{
+                width: 20em;
+                transform: scale(1.1) translateY(-.2rem);
+                overflow: hidden;
+
+                @include mQ(phone){
+                    width: 80vw;
+                }
+            }
+        }
+    }
+    .col-1-of-2{
+        text-align: center;
+        font-size: larger;
+    }
+    .col-1-of-4{
+        perspective: 80em;
+        height: 30em;
+        transition: all .4s ease;
+
+        &:hover,
+        &:active{
+            height: 38em;
+            transform: scale(1.03) translateY(-3px);
+        }
+    }
+
+    @include mQ(phone){
+        padding: 0 5rem;
+        margin-top: 4rem;
+    }
+}
+
+#section-reviews{
+    position: relative;
+    h2{
+        margin: 4rem;
+    }
+    .review{
+        width:70%;
+        transition: all .2s ease;
+        &:hover{
+            transform: skew(-15deg) scale(1.05);
+        }
+
+        @include mQ(phone){
+            width:90%;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+#give-review{
+    background-image: linear-gradient(to right, $color-green-1, $color-green-2);
+    padding: 5rem;
+
+    @include mQ(phone){
+        padding: 1em;
+        width:100%;
+    }
+}

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Leaves | Where Stories Take Flight</title>
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo1.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&family=Playfair+Display:ital,wght@1,500&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap">
+</head>
+<body>
+    <input type="checkbox" class="mode-selector__checkbox" id="toggle-light">
+    <input type="checkbox" class="mode-selector__checkbox" id="toggle-dark">
+
+    <header class="header">
+        <div class="mode-selector">
+            <div class="mode-selector__background">&nbsp;</div>
+            <nav class="mode-selector__options">
+                <ul class="row mode-selector__list">
+                    <li class="col-1-of-3 mode-selector__item">
+                        <label for="toggle-light" class="mode-selector__button">
+                            <img src="../img/light-mode.jpg" alt="Light Mode" class="mode-selector__image mode-selector__img-light">
+                            <br />
+                            <p class="mode-selector__text">It's Summer! &nbsp; &#127774;</p>
+                        </label>
+                    </li>
+                    <li class="col-1-of-3"><h2>Choose the mode you prefer!</h2></li>
+                    <li class="col-1-of-3 mode-selector__item">
+                        <label for="toggle-dark" class="mode-selector__button">
+                            <img src="../img/dark-mode.jpg" alt="Dark Mode" class="mode-selector__image mode-selector__img-dark">
+                            <br />
+                            <p class="mode-selector__text">Midnight Surfer &nbsp; &#127765;</p>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="panel1" class="fixedwidth">
+            <img id="textlogo" src="img/textlogo.png" alt="text logo" />
+            <label for="toggle-dark" class="mode-selector__button"><span class="navlinks"> &#127767; </span></label>
+            <a class="navlinks" href="#footer"> ABOUT </a>
+            <a class="navlinks" href="#section-reviews"> REVIEWS </a>
+            <a class="navlinks" href="#section-recommended"> RECOMMENDED </a>
+            <a class="navlinks" href="#section-bestselling"> BEST SELLING </a>
+            <a class="navlinks" href="#whyus"> WHY US? </a>
+        </div>
+
+        <div class="hamburger">
+            <input type="checkbox" class="hamburger__checkbox" id="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger__button">
+                <span class="hamburger__icon">&nbsp;</span>
+            </label>
+            <div class="hamburger__background">&nbsp;</div>
+            <nav class="hamburger__nav">
+                <ul class="hamburger__list">
+                    <li class="hamburger__item"><a href="#whyus" class="hamburger__link"> WHY US?</a></li>
+                    <li class="hamburger__item"><a href="#section-bestselling" class="hamburger__link"> BEST SELLING</a></li>
+                    <li class="hamburger__item"><a href="#section-recommended" class="hamburger__link"> RECOMMENDED</a></li>
+                    <li class="hamburger__item"><a href="#section-reviews" class="hamburger__link"> REVIEWS</a></li>
+                    <li class="hamburger__item"><a href="#footer" class="hamburger__link"> ABOUT</a></li>
+                    <li class="hamburger__item"><label for="toggle-dark" class="mode-selector__button"> <span class="hamburger__link"> TOGGLE MODE &#127767;</span></label></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="panel2" class="fixedwidth">
+            <img src="img/logo1.png" alt="logo" id="logo">
+            <div class="search-box">
+                <input type="text" placeholder="Search our collections...">
+            </div>
+            <div id="user">
+            <a href="#"><img src="../img/login.png" alt="Log In" /></a>
+            <a href="#"><img src="../img/shopping-cart.png" alt="My Cart" /></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="home" id="home">
+            <div class="home--sec1">
+                <div class="home--sec1--text">
+                    <h1>DISCOVER YOUR NEXT GREAT ADVENTURE</h1>
+                    <h3><span id="golden">GOLDEN |</span><span id="leaves"> LEAVES</span></h3>
+                </div>
+
+                <div class="btn-home">
+                <a class="btn" href="#section-bestselling">TOP PICKS</a>
+                </div>
+
+                <div class="svg-animation-div">
+                    <svg width="200" viewBox="0 0 912 652" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="undraw_road_to_knowledge_m8s0 1" clip-path="url(#clip0_1_56)">
+                        <g id="svg-book-3">
+                        <path id="Vector" d="M522.708 441.731C517.066 441.727 511.656 439.483 507.668 435.492C503.68 431.502 501.439 426.09 501.439 420.448C501.439 414.806 503.68 409.395 507.668 405.404C511.656 401.413 517.066 399.169 522.708 399.165H838.843C837.253 396.246 834.906 393.809 832.049 392.111C829.191 390.412 825.929 389.515 822.606 389.512H194.213C186.015 389.521 178.156 392.785 172.362 398.586C166.569 404.386 163.315 412.25 163.316 420.448C163.32 428.645 166.575 436.505 172.368 442.305C178.16 448.105 186.017 451.37 194.213 451.384H822.605C825.929 451.382 829.191 450.484 832.049 448.785C834.906 447.087 837.253 444.65 838.843 441.731L522.708 441.731Z" fill="#FFE4C4"/>
+                        <path id="Vector_2" d="M839.263 410.892H538.692C538.232 410.891 537.791 410.708 537.466 410.382C537.141 410.056 536.959 409.615 536.959 409.155C536.959 408.695 537.141 408.254 537.466 407.928C537.791 407.602 538.232 407.419 538.692 407.418H839.263C839.723 407.419 840.164 407.602 840.488 407.928C840.813 408.254 840.996 408.695 840.996 409.155C840.996 409.615 840.813 410.056 840.488 410.382C840.164 410.708 839.723 410.891 839.263 410.892Z" fill="#CCCCCC"/>
+                        <path id="Vector_3" d="M839.263 422.186H538.692C538.231 422.186 537.789 422.003 537.463 421.677C537.138 421.351 536.955 420.909 536.955 420.448C536.955 419.987 537.138 419.545 537.463 419.22C537.789 418.894 538.231 418.711 538.692 418.711H839.263C839.723 418.711 840.165 418.894 840.491 419.22C840.817 419.545 841 419.987 841 420.448C841 420.909 840.817 421.351 840.491 421.677C840.165 422.003 839.723 422.186 839.263 422.186Z" fill="#CCCCCC"/>
+                        <path id="Vector_4" d="M839.263 433.479H538.692C538.232 433.478 537.791 433.294 537.466 432.968C537.141 432.643 536.959 432.201 536.959 431.741C536.959 431.281 537.141 430.84 537.466 430.514C537.791 430.189 538.232 430.005 538.692 430.004H839.263C839.723 430.005 840.164 430.189 840.488 430.514C840.813 430.84 840.996 431.281 840.996 431.741C840.996 432.201 840.813 432.643 840.488 432.968C840.164 433.294 839.723 433.478 839.263 433.479Z" fill="#CCCCCC"/>
+                        </g>
+                        <g id="svg-book-2">
+                        <path id="Vector_5" d="M441.05 381.791C435.408 381.787 429.998 379.543 426.01 375.552C422.022 371.561 419.781 366.15 419.781 360.508C419.781 354.866 422.022 349.454 426.01 345.463C429.998 341.473 435.408 339.229 441.05 339.225H757.185C755.595 336.306 753.248 333.869 750.391 332.17C747.533 330.472 744.272 329.574 740.948 329.572H112.556C104.357 329.581 96.4979 332.845 90.7043 338.645C84.9107 344.446 81.6569 352.309 81.6577 360.508C81.6619 368.705 84.9174 376.565 90.7099 382.365C96.5024 388.164 104.359 391.429 112.556 391.444H740.948C744.272 391.441 747.533 390.544 750.391 388.845C753.248 387.147 755.595 384.71 757.185 381.791L441.05 381.791Z" fill="#90EE90"/>
+                        <path id="Vector_6" d="M757.605 350.952H457.034C456.574 350.951 456.133 350.767 455.808 350.442C455.483 350.116 455.301 349.675 455.301 349.215C455.301 348.755 455.483 348.313 455.808 347.988C456.133 347.662 456.574 347.478 457.034 347.477H757.605C758.065 347.477 758.507 347.66 758.833 347.986C759.159 348.312 759.342 348.754 759.342 349.215C759.342 349.675 759.159 350.117 758.833 350.443C758.507 350.769 758.065 350.952 757.605 350.952Z" fill="#CCCCCC"/>
+                        <path id="Vector_7" d="M757.605 362.245H457.034C456.573 362.245 456.131 362.062 455.806 361.736C455.48 361.41 455.297 360.969 455.297 360.508C455.297 360.047 455.48 359.605 455.806 359.279C456.131 358.953 456.573 358.77 457.034 358.77H757.605C758.065 358.77 758.507 358.953 758.833 359.279C759.159 359.605 759.342 360.047 759.342 360.508C759.342 360.969 759.159 361.41 758.833 361.736C758.507 362.062 758.065 362.245 757.605 362.245Z" fill="#CCCCCC"/>
+                        <path id="Vector_8" d="M757.605 373.538H457.034C456.574 373.537 456.133 373.354 455.808 373.028C455.483 372.702 455.301 372.261 455.301 371.801C455.301 371.341 455.483 370.9 455.808 370.574C456.133 370.248 456.574 370.065 457.034 370.064H757.605C757.833 370.063 758.06 370.107 758.271 370.195C758.482 370.282 758.674 370.41 758.836 370.571C758.998 370.732 759.126 370.924 759.214 371.135C759.301 371.346 759.346 371.572 759.346 371.801C759.346 372.029 759.301 372.256 759.214 372.467C759.126 372.678 758.998 372.87 758.836 373.031C758.674 373.192 758.482 373.32 758.271 373.407C758.06 373.494 757.833 373.539 757.605 373.538Z" fill="#CCCCCC"/>
+                        </g>
+                        <g id="svg-book-1">
+                        <path id="Vector_9" d="M359.392 319.851C353.75 319.847 348.34 317.603 344.352 313.612C340.364 309.621 338.124 304.21 338.124 298.567C338.124 292.925 340.364 287.514 344.352 283.523C348.34 279.532 353.75 277.288 359.392 277.284H675.527C673.937 274.365 671.59 271.929 668.733 270.23C665.876 268.532 662.614 267.634 659.29 267.631H30.8975C22.6991 267.64 14.8397 270.904 9.0462 276.705C3.25269 282.505 -0.00102004 290.369 2.39877e-07 298.567C0.00414805 306.764 3.25952 314.625 9.05191 320.424C14.8443 326.224 22.7007 329.489 30.8975 329.503H659.29C662.614 329.501 665.876 328.603 668.733 326.905C671.59 325.206 673.937 322.769 675.527 319.851L359.392 319.851Z" fill="#C5B358"/>
+                        <path id="Vector_10" d="M675.947 289.012H375.376C374.916 289.011 374.475 288.827 374.15 288.501C373.825 288.176 373.643 287.734 373.643 287.274C373.643 286.814 373.825 286.373 374.15 286.047C374.475 285.722 374.916 285.538 375.376 285.537H675.947C676.408 285.537 676.849 285.72 677.175 286.046C677.501 286.372 677.684 286.814 677.684 287.274C677.684 287.735 677.501 288.177 677.175 288.503C676.849 288.829 676.408 289.012 675.947 289.012Z" fill="#CCCCCC"/>
+                        <path id="Vector_11" d="M675.947 300.305H375.376C375.148 300.305 374.922 300.26 374.711 300.173C374.5 300.085 374.309 299.957 374.148 299.796C373.986 299.635 373.858 299.443 373.771 299.232C373.684 299.021 373.639 298.796 373.639 298.567C373.639 298.339 373.684 298.113 373.771 297.902C373.858 297.692 373.986 297.5 374.148 297.339C374.309 297.178 374.5 297.05 374.711 296.962C374.922 296.875 375.148 296.83 375.376 296.83H675.947C676.175 296.83 676.401 296.875 676.612 296.962C676.822 297.05 677.014 297.178 677.175 297.339C677.337 297.5 677.465 297.692 677.552 297.902C677.639 298.113 677.684 298.339 677.684 298.567C677.684 298.796 677.639 299.021 677.552 299.232C677.465 299.443 677.337 299.635 677.175 299.796C677.014 299.957 676.822 300.085 676.612 300.173C676.401 300.26 676.175 300.305 675.947 300.305Z" fill="#CCCCCC"/>
+                        <path id="Vector_12" d="M675.947 311.598H375.376C374.915 311.598 374.473 311.415 374.148 311.089C373.822 310.763 373.639 310.321 373.639 309.861C373.639 309.4 373.822 308.958 374.148 308.632C374.473 308.306 374.915 308.123 375.376 308.123H675.947C676.175 308.123 676.401 308.168 676.612 308.255C676.822 308.343 677.014 308.471 677.175 308.632C677.337 308.793 677.465 308.985 677.552 309.196C677.639 309.406 677.684 309.632 677.684 309.861C677.684 310.089 677.639 310.315 677.552 310.525C677.465 310.736 677.337 310.928 677.175 311.089C677.014 311.25 676.822 311.378 676.612 311.466C676.401 311.553 676.175 311.598 675.947 311.598Z" fill="#CCCCCC"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_56">
+                        <rect width="911.602" height="451.384" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                </div>
+
+            </div>
+            <div class="home--sec2">
+                <p><br />विद्या प्रशस्यते लोकैः विद्या सर्वत्र<br /> गौरवा।<br /> विद्यया लभते सर्वं विद्वान सर्वत्र<br /> पूज्यते।।</p>
+            </div>
+        </section>
+    
+        <section id="whyus">
+            <div class="u-center-text">
+                <h2 class="heading-3">GET IMMERSED INTO THE WORLD OF KNOWLEDGE</h2>
+            </div>
+            <div class="whyus__sec2">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h4 class="heading-4"><span class="material-symbols-outlined material-symbols-outlined--decorated">language</span>Worldwide Publishers</h4>
+                        <p>We collaborate with renowned publishers from around the globe, bringing you a diverse and international selection of books. You have access to titles from both established and emerging authors, providing a global perspective and enriching reading experience.</p>
+    
+                        <h4 class="heading-4"><span class="material-symbols-outlined material-symbols-outlined--decorated">alt_route</span>Wide Selection</h4>
+                        <p>We offer an extensive collection of books encompassing various genres, from popular bestsellers to niche categories. Our diverse selection ensures that you'll find something to suit your interests and preferences, catering to a wide range of readers.</p>
+                    </div>
+                    <div class="col-1-of-2">
+                        <h4 class="heading-4"><span class="material-symbols-outlined material-symbols-outlined--decorated">currency_exchange</span>Exceptional Quality</h4>
+                        <p>We prioritize the quality of our books. Each title undergoes a careful selection process, ensuring that you receive books that are well-crafted, engaging, and professionally published. </p>
+    
+                        <h4 class="heading-4"><span class="material-symbols-outlined material-symbols-outlined--decorated">groups</span>Community Engagement</h4>
+                        <p>We are passionate about fostering a vibrant reading community. Through book clubs, author events, and literary discussions, we actively engage with our customers, creating a space for shared experiences and connections.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section-bestselling">
+            <div class="u-center-text">
+                <h2 class="heading-3">WHAT PEOPLE ARE READING</h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">SCIENCE</div>
+                            <img src="../img/relativity.png" alt="Relativity" />
+                            <h4>Relativity: The Special and General Theory</h4>
+                            <div class="card__banner--discount">12% OFF!</div>
+                            <p class="click-to-flip">
+                                [TAP/CLICK THIS CARD TO FLIP]
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <p>Acclaimed as the pinnacle of scientific philosophy, the theories of relativity tend to be regarded as the exclusive domain of highly trained scientific minds. The great physicist himself disclaimed this exclusionary view, and in this book, he explains both theories in their simplest and most intelligible form for the layman not versed in the mathematical foundations of theoretical physics.</p>
+                            <div class="price-tag"><s>&#8377 816.86</s><span>&#8377 719.17</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-1-of-4">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">SCIENCE</div>
+                            <img src="../img/a-brief-history-of-time.png" alt="A Brief History of Time" />
+                            <h4>A Brief History of Time<br />&nbsp</h4>
+                            <div class="card__banner--discount">45% OFF!</div>
+                            <p class="click-to-flip">
+                                [TAP/CLICK THIS CARD TO FLIP]
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <p>Told in language we all can understand, A Brief History of Time plunges into the exotic realms of black holes and quarks, of antimatter and “arrows of time,” of the big bang and a bigger God—where the possibilities are wondrous and unexpected. With exciting images and profound imagination, Stephen Hawking brings us closer to the ultimate secrets at the very heart of creation.</p>
+                            <div class="price-tag"><s>&#8377 1477.74</s><span>&#8377 820.14</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">FICTION</div>
+                            <img src="../img/the-midnight-library.png" alt="the-midnight-library" />
+                            <h4>The Midnight Library </h4>
+                            <div class="card__banner--discount">25% OFF!</div>
+                            <p class="click-to-flip">
+                                [TAP/CLICK THIS CARD TO FLIP]
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <p>Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices...Would you have done anything different, if you had the chance to undo your regrets? A novel about all the choices that go into a life well lived.</p>
+                            <div class="price-tag"><s>&#8377 1477.74</s><span>&#8377 1106.66</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">MYSTERY & THRILLER</div>
+                            <img src="../img/the-guest-list.png" alt="the-guest-list.png" />
+                            <h4>The Guest List</h4>
+                            <div class="card__banner--discount">49% OFF!</div>
+                            <p class="click-to-flip">
+                                [TAP/CLICK THIS CARD TO FLIP]
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <p>It's the wedding. But someone won't survive it. Guests gather to celebrate the wedding of Jules Keegan and Will Slater. The latest barometer reading shows the weather has shifted from FAIR to CHANGEABLE, and dark clouds are looming overhead. Everyone on the island has a secret. Everyone has a motive. And someone won't leave this wedding alive...</p>
+                            <div class="price-tag"><s>&#8377 2462.89</s><span>&#8377 1249.51</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section-recommended">
+            <div class="u-center-text">
+                <h2 class="heading-3">RECOMMENDATION GALLERY</h2>
+            </div>
+            <div class="row recommended--search">
+                <div class="col-1-of-2">
+                    <label for="genres">Choose a Genre:</label>
+                    <select name="genres" id="genres">
+                        <option value="all">All</option>
+                        <option value="science">Science</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="mystery-and-thriller">Mystery & Thriller</option>
+                    </select>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="search-box">
+                        <input type="text" placeholder="&#128269 Author, Title, Genre . . .">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">SCIENCE</div>
+                            <img src="../img/relativity.png" alt="Relativity" />
+                            <h4>Relativity: The Special and General Theory</h4>
+                            <div class="card__banner--discount">12% OFF!</div>
+                            <div class="price-tag"><s>&#8377 816.86</s><span>&#8377 719.17</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup1">MORE...</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">SCI-FI</div>
+                            <img src="../img/book-1.png" alt="Sea of Tranquility" />
+                            <h4>Sea of Tranquility<br />&nbsp</h4>
+                            <div class="card__banner--discount">45% OFF!</div>
+                            <div class="price-tag"><s>&#8377 1477.74</s><span>&#8377 820.14</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup2">MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">FICTION</div>
+                            <img src="../img/the-midnight-library.png" alt="the-midnight-library" />
+                            <h4>The Midnight Library </h4>
+                            <div class="card__banner--discount">25% OFF!</div>
+                            <div class="price-tag"><s>&#8377 1477.74</s><span>&#8377 1106.66</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup3">MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">SCI-FFI</div>
+                            <img src="../img/book-2.png" alt="Backyard Starship #14 Shattered Will" />
+                            <h4>Backyard Starship: Shattered Will</h4>
+                            <div class="card__banner--discount">20% OFF!</div>
+                            <div class="price-tag"><s>&#8377 997.91</s><span>&#8377 798.95</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup4">MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">FICTION</div>
+                            <img src="../img/book-3.png" alt="One Italian Summer" />
+                            <h4>One Italian Summer</h4>
+                            <div class="card__banner--discount">10% OFF!</div>
+                            <div class="price-tag"><s>&#8377 970.45</s><span>&#8377 873.34</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup5">MORE...</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">HISTORICAL FICTION</div>
+                            <img src="../img/book-4.png" alt="The Lincoln Highway" />
+                            <h4>The Lincoln Highway</h4>
+                            <div class="card__banner--discount">20% OFF!</div>
+                            <div class="price-tag"><s>&#8377 893.98</s><span>&#8377 716.17</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup6">MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">FICTION</div>
+                            <img src="../img/book-5.png" alt="Atlas: The Story of Pa Salt" />
+                            <h4>Atlas: The Story of Pa Salt </h4>
+                            <div class="card__banner--discount">29% OFF!</div>
+                            <div class="price-tag"><s>&#8377 1132.67</s><span>&#8377 804.39</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup7">MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="card--no-flip">
+                        <div class="card__side card__side--front">
+                            <div class="card__banner--genre">MYSTERY & THRILLER</div>
+                            <img src="../img/the-guest-list.png" alt="the-guest-list.png" />
+                            <h4>The Guest List</h4>
+                            <div class="card__banner--discount">49% OFF!</div>
+                            <div class="price-tag"><s>&#8377 2462.89</s><span>&#8377 1249.51</span><b>ONLY</b></div>
+                            <div class="card__add-to-cart">
+                                <a class="btn" href="#popup8">MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section-reviews">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay loop muted>
+                    <source src="../img/book-video-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="u-center-text">
+                <h2 class="heading-3">READER RAVES</h2>
+            </div>
+            <div class="user-reviews">
+                <figure class="review">
+                    <blockquote class="review__text">
+                        <span class="material-symbols-outlined symbol-q">format_quote</span>Absolutely loved my experience with this bookshop! The selection of books is fantastic, ranging from classic literature to the latest bestsellers. The customer service was exceptional, with the staff going above and beyond to help me find the perfect book. The atmosphere is cozy and inviting, making it a delightful place to browse and discover new reads. I highly recommend this bookshop to any book lover looking for a wonderful literary experience.
+                    </blockquote>
+                    <figcaption class="review__author">
+                        <img src="../img/user1.jpg" alt="user1" class="review__avatar">
+                        <div class="review__author-box">
+                            <div class="review__author-name">JOE SMITH</div>
+                            <div class="review__author-date">June 25, 2023</div>
+                        </div>
+                        </figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="review__text">
+                        <span class="material-symbols-outlined symbol-q">format_quote</span>I cannot praise this bookshop enough! The range of books available is incredible, and I was thrilled to find rare and hard-to-find titles that I had been searching for. The quality of the books is exceptional, and each purchase felt like a treasure. The staff is friendly, knowledgeable, and passionate about books, making the whole experience even more enjoyable. Whether you're a casual reader or a dedicated bookworm, this is the place to go for an extraordinary book-buying experience.
+                    </blockquote>
+                    <figcaption class="review__author">
+                        <img src="../img/user2.jpg" alt="user2" class="review__avatar">
+                        <div class="review__author-box">
+                            <div class="review__author-name">ALEXA</div>
+                            <div class="review__author-date">May 17, 2023</div>
+                        </div>
+                        </figcaption>
+                </figure>
+    
+                <div class="u-center-text">
+                    <a href="#" class="btn-small">VIEW ALL REVIEWS <span class="material-symbols-outlined">trending_flat</span></a>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section id="give-review">
+            <div class="form__container">
+                <div class="form__fill">
+                    <form action="#" id="form">
+                        <div class="u-center-text">
+                            <h2 class="heading-3">SHARE YOUR STORY</h2>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Name" id="name" required>
+                            <label for="name" class="form__label">Name</label>
+                        </div>
+    
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email" id="email" required>
+                            <label for="email" class="form__label">Email</label>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__textarea" rows="3" name="form__textarea" placeholder="Take down your thoughts..."></textarea>
+                            <br />
+                            <label class="form__label" for="form__textarea">Take down your thoughts...</label>
+                        </div>                   
+                        <div class="form__radio-group">
+                            <h5>This Review is for:</h5>
+                            <input type="radio" class="form__radio-input" id="book" name="entity" required>
+                            <label for="book" class="form__radio-label btn-small">
+                                <span class="form__radio-icon material-symbols-outlined material-symbols-outlined">book</span>
+                                Book
+                            </label>
+                            <input type="radio" class="form__radio-input" id="shop" name="entity">
+                            <label for="shop" class="form__radio-label btn-small">
+                                <span class="form__radio-icon material-symbols-outlined material-symbols-outlined">store</span>
+                                Book Shop
+                            </label>
+                        </div>
+                        <div class="form__submit">
+                            <input type="submit" class="btn form__submit-button">
+                        </div>
+                    </form>             
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="column  footer__container">
+            <div class="row-1-of-2 row">
+                <div class="footer__container-left col-1-of-2">
+                    <p>
+                        Embark on a literary adventure at our bookshop, where captivating stories await . . .
+                    </p>
+                    <hr />
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">Terms and Conditions</a></li>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer__container-right col-1-of-2">
+                    <div class="u-center-text">
+                        <a href="#" class="btn-small">TOP &uArr;</span></a>
+                    </div>
+                    <img src="../img/logo2.png" alt="logo" class="footer__logo"/>
+                    <div class="footer__social">
+                        <ul>
+                            <li><a href="http://www.facebook.com" target="_blank" rel="noreferrer noopener"><i class="lab la-facebook"></i></a></li>
+                            <li><a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><i class="lab la-instagram"></i></a></li>
+                            <li><a href="http://www.linkedin.com" target="_blank" rel="noreferrer noopener"><i class="lab la-linkedin-in"></i></a></li>
+                            <li><a href="http://www.twitter.com" target="_blank" rel="noreferrer noopener"><i class="lab la-twitter"></i></a></li>
+                            <li><a href="http://www.youtube.com" target="_blank" rel="noreferrer noopener"><i class="lab la-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row-1-of-2">
+                <p id="copyright">&copy; Sayantan Garai<br /> Designed as part of a workshop conducted by Kshitij, IIT Kharagpur. No part of this website may be reproduced without prior written permission of the designer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="popup" id="popup1">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">SCIENCE</div>
+                    <img src="../img/relativity.png" alt="Relativity" />
+                    <h4>Relativity: The Special and General Theory</h4>
+                    <div class="card__banner--discount">12% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>Acclaimed as the pinnacle of scientific philosophy, the theories of relativity tend to be regarded as the exclusive domain of highly trained scientific minds. The great physicist himself disclaimed this exclusionary view, and in this book, he explains both theories in their simplest and most intelligible form for the layman not versed in the mathematical foundations of theoretical physics.</p>
+                    <div class="price-tag"><s>&#8377 816.86</s><span>&#8377 719.17</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id="popup2">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">SCI-FI</div>
+                    <img src="../img/book-1.png" alt="Sea of Tranquility" />
+                    <h4>Sea of Tranquility</h4>
+                    <div class="card__banner--discount">45% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>A virtuoso performance that is as human and tender as it is intellectually playful, Sea of Tranquility is a novel of time travel and metaphysics that precisely captures the reality of our current moment.</p>
+                    <div class="price-tag"><s>&#8377 1477.74</s><span>&#8377 820.14</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id="popup3">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">FICTION</div>
+                    <img src="../img/the-midnight-library.png" alt="The Midnight Library" />
+                    <h4>The Midnight Library</h4>
+                    <div class="card__banner--discount">25% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices...Would you have done anything different, if you had the chance to undo your regrets? A novel about all the choices that go into a life well lived.</p>
+                    <div class="price-tag"><s>&#8377 1477.74</s><span>&#8377 1106.66</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="popup" id="popup4">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">SCI-FI</div>
+                    <img src="../img/book-2.png" alt="Backyard Starship #14 Shattered Will" />
+                    <h4>Backyard Starship: Shattered Will</h4>
+                    <div class="card__banner--discount">20% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>Earth is no longer alone, and Van isn’t happy about it.With each passing event in his career, Van continues to unravel locked memories,But first, there’s the small matter of aliens in Wisconsin... and they're playing games in Van's back yard.</p>
+                    <div class="price-tag"><s>&#8377 997.91</s><span>&#8377 798.95</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="popup" id="popup5">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">FICTION</div>
+                    <img src="../img/book-3.png" alt="One Italian Summer" />
+                    <h4>One Italian Summer</h4>
+                    <div class="card__banner--discount">10% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>Over the course of one Italian summer, Katy gets to know Carol, not as her mother, but as the young woman before her. She is not exactly who Katy imagined she might be, however, and soon Katy must reconcile the mother who knew everything with the young woman who does not yet have a clue.</p>
+                    <div class="price-tag"><s>&#8377 970.45</s><span>&#8377 873.34</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id="popup6">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">HISTORICAL FICTION</div>
+                    <img src="../img/book-4.png" alt="The Lincoln Highway" />
+                    <h4>The Lincoln Highway</h4>
+                    <div class="card__banner--discount">20% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>In June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the work farm where he has just served a year for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett’s intention is to pick up his eight-year-old brother and head west where they can start their lives anew.</p>
+                    <div class="price-tag"><s>&#8377 893.98</s><span>&#8377 716.17</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id="popup7">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">FICTION</div>
+                    <img src="../img/book-5.png" alt="Atlas: The Story of Pa Salt" />
+                    <h4>Atlas: The Story of Pa Salt</h4>
+                    <div class="card__banner--discount">29% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>To the surprise of everyone, it is the missing sister who Pa Salt has chosen to entrust with the clue to their pasts. The sisters must confront the idea that their adored father was someone they barely knew. Spanning a lifetime of love and loss, crossing borders and oceans, Atlas: The Story of Pa Salt draws the Seven Sisters series to its stunning, unforgettable conclusion.</p>
+                    <div class="price-tag"><s>&#8377 1132.67</s><span>&#8377 804.39</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id="popup8">
+        <div class="popup__container">
+            <div class="row">
+                <div class="popup__container-left col-1-of-2">
+                    <div class="card__banner--genre">MYSTERY & THRILLER</div>
+                    <img src="../img/the-guest-list.png" alt="the-guest-list.png" />
+                    <h4>The Guest List</h4>
+                    <div class="card__banner--discount">49% OFF!</div>
+                </div>
+                <div class="popup__container-right col-1-of-2">
+                    <div class="popup__close">
+                        <a href="#section-recommended">&nbsp;&times;&nbsp;</a>
+                    </div>
+                    <p>It's the wedding. But someone won't survive it. Guests gather to celebrate the wedding of Jules Keegan and Will Slater. The latest barometer reading shows the weather has shifted from FAIR to CHANGEABLE, and dark clouds are looming overhead. Everyone on the island has a secret. Everyone has a motive. And someone won't leave this wedding alive...</p>
+                    <div class="price-tag"><s>&#8377 2462.89</s><span>&#8377 1249.51</span><b>ONLY</b></div>
+                    <div class="card__add-to-cart">
+                        <input class="btn" value=" + ADD" type="button" onclick="this.value=' &#10004 ADDED'">
+                        <input class="btn" value="BUY NOW" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

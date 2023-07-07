@@ -1,0 +1,3 @@
+@function gradient-citrus-peel($direction, $opacity){
+     @return linear-gradient($direction, rgba(#fdc830, $opacity), rgba(#f37335,$opacity));
+    }

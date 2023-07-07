@@ -1,0 +1,106 @@
+#panel1{
+    height: 3.2em;
+    background-image: linear-gradient(
+        to bottom left,
+        rgb(251, 190, 36),
+        rgba(239, 148, 12, 0.711)
+    );
+    box-shadow:0 0 0.7rem 0 rgba(0,0,0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: all .3s ease;
+
+    i{
+        font-size: larger;
+    }
+}
+.navlinks{
+    display: block;
+    float: right;
+    text-decoration: none;
+    color: rgb(6, 99, 6);
+    font-weight: 300;
+    padding:0.1rem 1rem;
+    margin:0.6rem;
+    border-radius: 30rem;
+    transition: all .3s ease;
+
+    &:hover{
+        background-color: #b4a378a6;
+        color:darkgreen;
+        
+        font-weight: 400;
+    }
+
+    @include mQ(phone){
+        display: none;
+    }
+}
+
+#textlogo{
+    transform: scale(0.6);
+
+    @include mQ(phone){
+        transform: scale(0.4);
+    }
+}
+
+#panel2{
+    height:12vh;
+    width:100%;
+    padding:4rem;
+    display: inline-block;
+    background-image:linear-gradient(
+        to left,
+     rgba(237, 228, 133, 0.406),
+     rgba(120, 113, 32, 0.406)),
+     url("../img/book-banner.jpg");
+     .search-box{
+        padding-left: 10rem;
+     }
+
+    @include mQ(phone){
+        padding: 6.5rem 4rem 1.5rem;      
+        .search-box{
+            padding-left: 2rem;
+            transform: scale(.9);
+            bottom: 0;
+        
+            input{
+                width:8rem;
+                padding: .5rem;
+            }
+            
+        }
+
+    }
+}
+
+#logo{
+    height: 3.5rem;
+    text-align: left;
+
+    @include mQ(phone){
+        transform: scale(1.5);
+    }
+}
+
+
+#user{
+    display:inline;
+    float: right;
+
+    @include mQ(phone){
+        transform: scale(.8);
+    }
+}
+#user img{
+    height: 2.7em;
+    margin-top: 2px;
+    padding:0 0.5rem 0.5rem 0.5rem;
+    transition: all .2s;
+    &:hover{
+        transform: scale(1.1) translateY(-.2rem);
+    }
+}

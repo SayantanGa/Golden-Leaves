@@ -1,0 +1,203 @@
+//////////////////////////////
+/// FUNCTIONALITY
+
+.mode-selector{
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__background{
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background-image: linear-gradient(to bottom, #30E8BF, #FF8235);
+        z-index: 1000;
+        transition: all .35s linear;
+        backface-visibility: hidden;
+        overflow: hidden;
+    }
+
+    &__options{
+        height: 90vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        transition: visibility 0s, opacity .5s linear;
+
+        h2{
+            @media (min-width:50em){
+                @include align-center;  
+            }
+        }
+
+    }
+
+    &__list{
+        @include align-center;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__item{
+        display: inline-block;
+        width: 100%;
+        margin: 1rem;
+        transition: transform .1s;
+
+        &:hover,
+        &:active{
+            transform: scale(1.2);
+        }
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            font-size: 3rem;
+            text-decoration: none;
+            color: bisque;
+            padding: 1rem 2rem;
+            transition: all .4s;
+        }
+        &:hover,
+        &:active{
+            border-bottom: 2px solid bisque;
+        }
+
+    }
+
+    &__image{
+        height: 20vh;
+    }
+
+    &__text{
+        font-size: large;
+        color: $color-3;
+        font-weight: 500;
+    }
+
+    &__button{
+        cursor: pointer;
+    }
+
+    &__checkbox:checked ~ .header .mode-selector__background{
+        height:0;
+    }
+
+    &__checkbox:checked ~ .header .mode-selector__options{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+/////////////////////////////
+/// COLORS
+
+body:has(#toggle-dark:checked){
+    background-color: $dark-5;
+    color: $color-3;
+    #panel1{
+        background-color: $dark-2;
+        background-image: none;
+    }
+    #panel2{
+        background-image:linear-gradient(
+            to left,
+         rgba(53, 51, 29, 0.406),
+         rgba(64, 60, 16, 0.406)),
+         url("../img/book-banner.jpg");
+        .search-box{
+            input{
+                background-color: $dark-1;
+                color:$color-3;
+            }
+        }
+
+    }
+
+    .home{
+        &--sec1{
+            background-image: linear-gradient(
+                to right,
+             rgba(2, 2, 2, 0.671),
+              rgba(2, 2, 2, 0.623)),
+              url("../img/brown-shade-1.png");
+        }
+        &--sec2{
+            background-image: linear-gradient(
+                to right,
+             rgba(68, 65, 25, 0.721),
+              rgba(72, 53, 1, 0.823)),
+              url("../img/library.jpg");
+              p{
+                color:$color-3;
+              }
+        }
+    }
+
+    #whyus{
+        background-color: $dark-4;
+    }
+
+    #section-bestselling{
+        background-image: linear-gradient(to right, #bdc3c7, #2c3e50), url("../../img/library-2.jpg");
+    }
+
+    #section-recommended{
+        background-color: grey;
+    }
+
+    #give-review{
+        background-image: linear-gradient(to right, #485563,#29323c);
+    
+        .form__container{
+            background-image: linear-gradient(105deg, rgba($dark-4,.95) 0%, rgba($dark-4,.75) 50%, rgba(grey, .7) 50%), url("/img/library-3.jpg");
+
+            .form__radio-label{
+                color:antiquewhite;
+            }
+        }
+    }
+
+    .footer__container{
+        background-image: linear-gradient(to bottom,$dark-2,  #333);
+    }
+
+    .card__side{
+        &--front{
+            background-image: linear-gradient(to right bottom, #232526, #414345);
+        }
+        &--back{
+            background-image: linear-gradient(to right bottom, #1F1C2C, #928DAB);
+            color: aliceblue;
+        }
+    }
+
+    .btn{
+        background-color:cadetblue;
+        background-image: none;
+    }
+
+    .hamburger__background{
+        background-image: radial-gradient(#292E49, #536976);
+    }
+
+    .popup{
+        &__container{
+            background-image: linear-gradient(to right bottom, #232526, #414345);
+            
+            &-right{
+                color: aliceblue;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+
+.search-box{
+    display: inline;
+ 	width:10rem;
+ 	color:black;
+ 	font-size:110%;
+ 	position:relative;
+ 	bottom:1.5rem;
+    left:1rem;
+    float: inline-start;
+
+    input{
+        padding: 0.75em;
+        border: none;
+        width: 15em;
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius: 30em;
+        transition: all 0.2s;
+
+        &:hover, &:focus{
+            width: 23em;
+            transform: scale(1.1) translateY(-.2rem);
+        }
+    }
+}

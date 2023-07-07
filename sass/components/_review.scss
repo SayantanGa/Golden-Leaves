@@ -1,0 +1,68 @@
+.review{
+    background-color: rgba($color-lightgrey, .6);
+    box-shadow: $shadow-box;
+    padding: 2em;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transform: skewX(-15deg);
+
+    &__text{
+        margin-bottom: 2rem;
+        z-index:5;
+        position: relative;
+        transform: skewX(15deg);
+        text-align: justify;
+    }
+    &__author{
+        display:flex;
+        align-items: center;
+    }
+    &__avatar{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        transform: skewX(15deg);
+    }
+    &__author-box{
+        margin-right: auto;
+        transform: skewX(15deg);
+    }
+    &__author-name{
+        font-size: .8rem;
+        font-weight: 600;
+        margin-bottom: .25rem;
+    }
+    &__author-date{
+        font-size: .7rem;
+        color: $color-green-2;
+    }
+
+    .symbol-q{
+        position: absolute;
+        top: 0rem;
+        right: 1rem;
+        font-size: 10rem;
+        color: rgba($color-green-2, .2);
+        z-index: -1;
+        font-weight: 700;
+    }
+
+    @include mQ(tab-p){
+        line-height: 1.4;
+    }
+    @include mQ(phone){
+        transform: skew(0deg);
+
+        &__text{
+            transform: skew(0deg);
+        }
+        &__avatar{
+            transform: skew(0deg);
+        }
+        &__author-box{
+            transform: skew(0deg);
+        }
+    }
+}
